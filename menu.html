@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>oiSushi - Delicious sushi</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+ <!-- SEO -->
+    <!-- Primary Meta Tags -->
+    <title>Hitaka - Your asian companion in food and delivery</title>
+    <meta name="title" content="Hitaka -  Your asian companion in food and delivery">
+    <meta name="description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Hitaka -  Your asian companion in food and delivery">
+    <meta property="og:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Hitaka -  Your asian companion in food and delivery">
+    <meta property="twitter:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+</head>
+<body>
+	<!--header--->
+	<header>
+		<a href="index.html" class="logo">oi<span style="color:#E8C928 ;">SU</span>shi</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="index.html"style="color: #696966;">HOME</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="about.html" style="color: #696966;" >ABOUT-US</a></li>
+			<li><a href="contact.html"style="color: #696966;">CONTACT-US</a></li>
+		</ul>
+	</header>
+    <section class="rest">
+        <br>
+        <br>
+        <h1>Our menu </h1>
+        <br>
+        <h3 style="text-align:left ;">  our receipts are made with love thats the secret</h3>
+    </section>
+
+	<!--Home section--->
+	<section  id="home">
+		<div class="select">
+			<div>
+				<h3>select your desired meal</h3>
+				<br>
+				<h3 >add your meals to cart:</h3>
+			</div>
+			<div>
+             <select  id="menu" onchange="filter(value)">
+				<option value="all">all</option>
+				<option value="sushi">sushi</option>
+				<option value="soup">soup</option>
+				<option value="salade">salade</option>
+			 </select>
+			</div>
+			
+		
+			
+		</div>
+		
+	</section>
+	<div class="opa">
+		<h3 >Cart</h3>
+		<img src="./img/cart-removebg-preview.png" alt=""  width="50px" height="50px">
+	</div>
+
+	<section class="cartgrid" id="package">
+
+		
+
+		<div class="grid">
+			<div id="c1" class="box">
+				<div class="thum">
+					<img src="./img/miso-soup-with-mushrooms-table_140725-5328_826x550.webp" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('mushroomsoup','mushroomsoupprice')">add to cart</button>
+						<h3 id="mushroomsoup">mushroom soup</h3>
+					</div>
+					<div class="stars">
+						<h3 id="mushroomsoupprice">13.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+
+			<div id="c2" class="box">
+				<div class="thum">
+					<img src="./img/rawz.png" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('japonaisesoup','japonaisesoupprice')">add to cart</button>
+						<h3 id="japonaisesoup">japonaise soup</h3>
+					</div>
+					<div class="stars">
+						<h3 id="japonaisesoupprice">14.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+
+			<div id="c3" class="box">
+				<div class="thum">
+					<img src="./img/roll.png">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('salamonsushi','salamonsushiprice')">add to cart</button>
+						<h3 id="salamonsushi">salamon sushi</h3>
+					</div>
+					<div class="stars">
+						<h3 id="salamonsushiprice">15.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+			<div id="c4" class="box">
+				<div class="thum">
+					<img src="./img/G5ahDmP3Mnrj85QMo_826x545resize.jpg" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('healthysushi','healthysushiprice')">add to cart</button>
+						<h3 id="healthysushi">healthy sushi</h3>
+					</div>
+					<div class="stars">
+						<h3 id="healthysushiprice">16.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+			<div id="c5" class="box">
+				<div class="thum">
+					<img src="./img/korean-food-kim-bap-steamed-rice-with-vegetables-seaweed_1150-42969.png">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('shrimpsushi','shrimpsushiprice')">add to cart</button>
+						<h3 id="shrimpsushi">shrimp sushi</h3>
+					</div>
+					<div class="stars">
+						<h3 id="shrimpsushiprice">17.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+			<div id="c6" class="box">
+				<div class="thum">
+					<img src="./img/namAfRF3BurkHtX3k.png" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('platsushi','platsushiprice')">add to cart</button>
+						<h3 id="platsushi">plat sushi</h3>
+					</div>
+					<div class="stars">
+						<h3 id="platsushiprice">18.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+			<div id="c7" class="box">
+				<div class="thum">
+					<img src="./img/poke-bowl-with-avocado-black-rice-smoked-tofu-vegetables-sprouts_79830-1957.jpg" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('avocadosalade','avocadosaladeprice')">add to cart</button>
+						<h3 id="avocadosalade">avocado salade</h3>
+					</div>
+					<div class="stars">
+						<h3 id="avocadosaladeprice">19.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+			<div id="c8" class="box">
+				<div class="thum">
+					<img src="./img/hawaiian-salmon-fish-poke-bowl-with-rice-radish-cucumber-tomato-sesame-seeds-seaweeds-buddha-bowl-diet-food-top-view-flat-lay_2829-19712.jpg" alt="the best and delicious sushi,sushi,sushinearme,yosushi,oiSushi,genkisushi">
+					
+				</div>
+
+				<div class="dest-content">
+					<div class="location">
+						<button onclick="add('hawaiansalade','hawaiansaladeprice')">add to cart</button>
+						<h3 id="hawaiansalade">hawaian salade</h3>
+					</div>
+					<div class="stars">
+						<h3 id="hawaiansaladeprice">12.99</h3>
+						<h3>$</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div>
+			<div class="cart">
+                        
+				<div id="inp" >
+					<table>
+						<tr>
+							<th>product</th>
+							
+							<th>price</th>
+						</tr>
+					</table>
+					<table id="e">
+						
+						
+						
+							
+						
+					</table>
+					
+				</div>
+			</div>
+			
+			<div class="">
+				
+				<div type="text" id="inp1"  placeholder="total" >
+					<h3>Total=</h3>
+                <h3 id="htotal"></h3>
+				
+				</div>
+				<button onclick="validation()">valider</button>
+			</div>
+			
+			
+			</div>
+		</div>
+	</section>
+
+	<!--Newsletter--->
+	<section class="newsletter">
+		<div class="news-text">
+			<h2>Newsletter</h2>
+			<p>be the first to get about our new receipt
+                 <br> and our Promotional offers</p>
+		</div>
+
+		<div class="send">
+			<form>
+				<input type="email" id="color" placeholder="Write Your Email" required>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+
+	<!--footer--->
+	<section id="contact">
+		<div class="footer">
+			<div class="main">
+				<div class="list">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Menu</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>Support</h4>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">menu</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>Contact Info</h4>
+					<ul>
+						<li><a href="#">98 West 21th Street</a></li>
+						<li><a href="#">New York NY 10016</a></li>
+						<li><a href="#">05.34.56.78.90</a></li>
+						<li><a href="#">oishisushi@allo.com</a></li>
+						<li><a href="#">05.34.56.70.60</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>Connect</h4>
+					<div class="social">
+						<a href="#"><i class='bx bxl-facebook' ></i></a>
+						<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+						<a href="#"><i class='bx bxl-twitter' ></i></a>
+						<a href="#"><i class='bx bxl-linkedin' ></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="end-text">
+			<p>Copyright ©2022 All rights reserved | oi<span style="color:#E8C928 ;">SU</span>shi</p>
+		</div>
+	</section>
+
+	<!--link to js--->
+	<script type="text/javascript" src="js/js.js"></script>
+	
+
+
+</body>
+</html>
